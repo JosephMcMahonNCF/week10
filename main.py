@@ -66,6 +66,15 @@ class Truck:
         return print("Dumping payload...")
 
 
+class vehicle:
+    def __init__(self, make, model, year, weight, num_doors):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.weight = weight
+        self.num_doors = num_doors
+
+
 
 if __name__ == "__main__":
     # Create instances of Vehicle Car
