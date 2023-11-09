@@ -65,19 +65,22 @@ class Truck:
     def dump_load(self):
         return print("Dumping payload...")
 
-# Creating Boat
-
-myBoat = Boat(make="SeaCraft", model="Sailor", year=2023, weight=1500, boat_type="Sailboat")
-
-# Calling display_info and honk for Boat
-myBoat.display_info()
-myBoat.honk()
 
 
-# Creating Truck
+if __name__ == "__main__":
+    # Create instances of Vehicle Car
+    car = Car("Toyota", "Corolla", 2021, 1275.0, 4)
+    truck= Truck("Mac", "Street 750", 2019, 220.0, 4, 1001) #<--- but this now takes truck's constructor.
 
-myTruck = Truck(make="Ford", model="F-150", year=2023, weight=2500, num_doors=2, payload_capacity=5000)
-# Calling display_info and honk for Truck
-myTruck.display_info()
-myTruck.honk()
+    # Display information of the car
+    print("Car Info:")
+    car.display_info()
+    car.honk()
+    print()
 
+
+    # Display information of the motorcycle
+    print("Truck Info:")
+    truck.display_info()
+    truck.honk()
+    print()
