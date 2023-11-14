@@ -15,8 +15,8 @@ class Car(Vehicle):
     def __init__(self, make, model, year, weight, num_doors):
         super().__init__(make, model, year, weight)
         self.num_doors = num_doors
-
     # Add class specific attributes and __str__, __repr__ methods here
+
     def __str__(self):
         return f"{super().__str__()}, Num Doors: {self.num_doors}"
 
